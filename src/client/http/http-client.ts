@@ -15,12 +15,14 @@
  * limitations under the License.
  */
 
-import {
-  delete as makeDeleteRequest,
-  get as makeGetRequest,
-  patch as makePatchRequest,
-  post as makePostRequest,
-} from 'axios';
+import axios from 'axios';
+
+const {
+  delete: makeDeleteRequest,
+  get: makeGetRequest,
+  patch: makePatchRequest,
+  post: makePostRequest,
+} = axios;
 
 import { HttpClientBase, HttpClientBaseOptions, HttpRequestConfigInit } from './http-client-base';
 
